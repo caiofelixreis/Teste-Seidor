@@ -1,0 +1,12 @@
+{
+  "funcionarios": [
+    {
+      "nome": "Gabriel Felix Reisaaaaaa",
+      "cpf": "095.379.776-76",
+      "salario": "5000",
+      "desconto": "230",
+      "dependentes": "10",
+      "id": 1
+    }
+  ]
+}

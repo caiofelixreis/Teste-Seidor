@@ -1,0 +1,41 @@
+@import '../../styles/variables.scss';
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: #0005;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .modal{
+        width: 25rem;
+        height: fit-content;
+        padding: 2rem 1.5rem;
+        background-color: $light;
+        box-shadow: 0px 10px 10px grey;
+        border-radius: 1rem;
+        border: 2px solid $primary;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 1rem;
+
+        h1{
+            color: $font-dark;
+            font-family: $font;
+            font-weight: 300;
+        }
+
+        .actions{
+            width: 60%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+    }
+
+}

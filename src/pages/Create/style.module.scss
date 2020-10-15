@@ -1,0 +1,61 @@
+@import '../../styles/variables.scss';
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 3rem;
+
+    h1 {
+        font-family: $font;
+        font-weight: 300;
+        color: $dark;
+        border-bottom: 1px dotted $dark;
+    }
+
+    .formCreate{
+        // background-color: turquoise;
+        max-width: 800px;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+
+        .formControl{
+            display: flex;
+            flex-direction: column;
+            font-family: $font;
+            margin: 1rem;
+
+            label{
+                font-weight: 600;
+                font-size: 1.3rem;
+                color: $font-dark;
+            }
+
+            input{
+                width: 100%;
+                margin: 0.5rem 0;
+                background-color: transparent;
+                border: none;
+                border-bottom: 1px dotted $primary;
+                font-size: 1.1rem;
+                color: darken($color: $dark, $amount: 10);
+                font-family: $font;
+
+                
+            }
+            ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+                color: lighten($color: $font-dark, $amount: 35);
+                font-size: 1rem;
+              }
+        }
+
+        button{
+            margin: auto;
+            font-size: 1.3rem;
+            margin-top: 1rem;
+        }
+    }
+}

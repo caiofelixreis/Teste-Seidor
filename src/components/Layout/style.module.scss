@@ -1,0 +1,42 @@
+@import '../../styles/variables.scss';
+
+nav{
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+
+    img{
+        width: 5rem;
+    }
+}
+
+.footer{
+    width: 100vw;
+    height: fit-content;
+    position: fixed;
+    bottom: 0;
+    background-color: $primary;
+    padding: 0.3rem 1rem;
+    font-family: $font;
+    color: $light;
+    font-weight: 300;
+    text-align: right;
+    border-top: 4px solid $dark;
+
+
+    svg{
+        color: $red;
+        margin-bottom: -0.2rem;
+        font-size: 1.2rem;
+    }
+
+    strong{
+        font-size: 1.1rem;
+        margin-left: 0.3rem;
+        font-weight: 700;
+        margin-right: 2rem;
+    }
+}

@@ -1,0 +1,109 @@
+@import "../../styles/variables.scss";
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 7rem;
+    margin-top: 3rem;
+
+    h1 {
+        font-family: $font;
+        font-weight: 300;
+        color: $dark;
+        border-bottom: 1px dotted $dark;
+    }
+
+    .tableContainer {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+
+        .tableActions {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: -1.3rem;
+
+            h2 {
+                font-family: $font;
+                font-weight: 800;
+                color: $font-dark;
+            }
+
+            .actions {
+                display: flex;
+                gap: 2rem;
+                align-items: center;
+
+                svg {
+                    font-size: 1.5rem;
+                }
+
+                .able {
+                    color: $dark;
+                    cursor: pointer;
+                    transition: 200ms;
+
+                    &:hover {
+                        color: $primary;
+                    }
+                }
+
+                .disabled {
+                    color: grey;
+                    cursor: not-allowed;
+                }
+            }
+        }
+
+        table {
+            width: 100%;
+            margin-top: 2rem;
+            background: #fff;
+            border-radius: 1rem;
+            box-shadow: 0 10px 50px #0001;
+            border-collapse: collapse;
+            padding: 3rem;
+
+            thead {
+                text-align: left;
+                background: darken($color: $light, $amount: 4);
+                td {
+                    font-weight: 700;
+                }
+            }
+
+            td {
+                padding: 0.7rem 1rem;
+                border: 1px solid darken($color: $light, $amount: 10);
+                color: $font-dark;
+                font-family: $font;
+            }
+            tbody {
+                .regular {
+                    cursor: pointer;
+                    transition: 250ms ease;
+                    color: $font-dark;
+                    &:hover {
+                        td {
+                            color: $dark;
+                        }
+                        background: $light;
+                        color: $dark;
+                    }
+                }
+                .clicked {
+                    cursor: pointer;
+                    td {
+                        color: $dark;
+                    }
+                    background: darken($color: $light, $amount: 5);
+                    color: $dark;
+                }
+            }
+        }
+    }
+}
