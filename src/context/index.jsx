@@ -3,10 +3,13 @@ import api from '../services/api'
 
 export const Context = createContext(null)
 
+//uso do contexto para gerenciar estados globais
 const ContextProvider = ({ children }) => {
 
     //estado que define quando o moldal ira aparecer ou não
     const [modal, setModal] = useState(false)
+
+
     const [selectedFunc, setSelectedFunc] = useState([])
     const [data, setData] = useState([])
 

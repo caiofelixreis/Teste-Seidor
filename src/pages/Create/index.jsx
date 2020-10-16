@@ -11,6 +11,7 @@ const Create = () => {
 
     const history = useHistory()
 
+    //por estarmos usando a mesma pagina para a criacao e edição, sempre q existir o id a pagina sera destinada para edicao
     const { id } = useParams()
 
     const [formData, setFormData] = useState({
@@ -25,6 +26,7 @@ const Create = () => {
 
     const { data, setData, setSelectedFunc } = useContext(Context)
 
+    //essa funcao recebra os valores dos inputs sempre que algo foi digitado
     const handleInputChange = ({ target }) => {
         const { name, value } = target
         setFormData({ ...formData, [name]: value })
@@ -54,7 +56,7 @@ const Create = () => {
     }
 
     useEffect(() => {
-
+        //codigo que verifica se todos os campos foram preenchidos
         setCompleted(Object.keys(formData).every(key => Boolean(formData[key])))
 
     }, [formData])

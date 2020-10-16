@@ -4,12 +4,16 @@ import RegularButton from '../RegularButton'
 import { Context } from '../../context'
 import api from '../../services/api'
 
+
+
 const Modal = ({ title }) => {
 
     const { modal, setModal, selectedFunc, data, setData } = useContext(Context)
 
+
     const handleDeleteConfirm = async () => {
 
+        //codigo que procura se existe o funcionario que sera deletado
         const findFunc = data.find((element) => element.id === selectedFunc[0])
 
         if (findFunc) {
@@ -24,6 +28,8 @@ const Modal = ({ title }) => {
     }
 
     const handleCloseClick = ({ target }) => {
+
+        //fechara o modal no click fora da caixa
         if (target.className === 'style_container__2SwyC') setModal(!modal)
     }
 

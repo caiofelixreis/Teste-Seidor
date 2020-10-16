@@ -40,6 +40,7 @@ const Home = () => {
         return total.toFixed(2)
     }
 
+    //codigo que define qual o funcionario clicado para aplicar estilos e pegar seu id
     const handleFuncClick = (id) => {
 
         console.log(id, selectedFunc[0])
