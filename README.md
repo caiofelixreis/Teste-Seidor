@@ -20,13 +20,14 @@
 
    *Criação*
       Basta clicar no botão `+ Novo Funcionário`, que te direcionará para um fomrulário. O botão de criação do form, só será habilitado quando todos os campos estiverem completos.
-      
+   
+   *Deletar*
+       O botão de excluir permanecerá desabilitado enquanto um funcionário da listagem não for selecionado. 
+       Ao selecionar um funcionário para exclusão, um modal será responsavel pela a confirmção da exclusão.
+
    *Atualização*
       O botão de edição permanecerá desabilitado enquanto um funcionário da listagem não for selecionado. 
       Ao selecionar um funcionário para editar, um formulário será aberto e terá os campos preenchidos com as informações do funcionário selecionado.
      
-    *Deletar*
-       O botão de excluir permanecerá desabilitado enquanto um funcionário da listagem não for selecionado. 
-       Ao selecionar um funcionário para exclusão, um modal será responsavel pela a confirmção da exclusão.
-
+    
 
