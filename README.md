@@ -1,3 +1,17 @@
+Esse projeto foi desenvolvido com o framework java script *ReactJs*
+
+
+* como não foi especificado o uso de algum banco de dados, eu usei o json-server somente para mockar e persistir os dados.
+
+
+## Para Começar
+   - `yarn` ou `npm i` para instalar todas as dependências necessárias
+   - `json-server --watch database/db.json`
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
